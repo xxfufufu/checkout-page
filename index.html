@@ -66,8 +66,8 @@
     </section>
     <div class="area">
     <section class="contact-wrapper">
-      <div class="title">Contact Information</div>
       <form action="">
+      <div class="title">Contact Information</div>
         <div class="form-template">
           <label for="email">E-mail</label>
           <div class="input-container">
@@ -82,11 +82,7 @@
             <input class="input-field" type="text" required id="phone" placeholder="Enter your phone...">
           </div>
         </div>
-      </form>  
-    </section>
-    <section class="shipping-address-wrapper">
       <div class="title">Shipping Address</div>
-      <form action="">
         <div class="form-template">
           <label for="name">Full name</label>
           <div class="input-container">
@@ -113,8 +109,12 @@
             <label for="coutry">Address</label>
             <div class="input-container">
               <i class="fas fa-city"></i>
-              <input class="input-field" type="text" required id="country" placeholder="Your country...">
-              <i class="fas fa-caret-square-down"></i>
+              <select name="country" id="country" placeholder="Your country...">
+                <option selected hidden disabled>Your country...</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="japan">Japan</option>
+                <option value="singapore">Singapore</option>
+              </select>
             </div>
           </div>
           <div class="form-template">
@@ -130,7 +130,7 @@
           <label for="check">Save this information for next time</label>
         </div>
         <div class="btn">
-          <input type="button" value="Continue">
+          <input class="tombol" type="submit" value="Continue">
         </div>
       </form>  
     </section>

@@ -160,7 +160,7 @@ margin: 20px 0;
     margin-bottom: 30px;
 }
 .title {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -208,6 +208,14 @@ i {
     width: 80%;
 }
 
+select {
+    margin-left: 10px;
+    width: 100%;
+    background-color: white;
+    border: 0;
+    outline: none;
+}
+
 .check {
     display: flex;
     align-items: center;
@@ -234,8 +242,16 @@ i {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
+    cursor: pointer;
 }
 
+.btn input:hover {
+    background: #df8434;
+}
+
+.btn input:focus {
+    outline: 1px solid red;
+}
 footer {
     text-align: center;
     font-family: Montserrat;
@@ -268,9 +284,6 @@ footer {
         height: fit-content;
     }
     .contact-wrapper {
-        grid-area: area;
-    }
-    .shipping-address-wrapper {
         grid-area: area;
     }
     footer {

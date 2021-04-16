@@ -3,8 +3,6 @@ const minus = document.querySelectorAll('.decrement');
 const total = document.querySelector('.price-total');
 const items = document.querySelectorAll('.items');
 
-// const nilai = document.querySelectorAll('.how-much');
-
 plus.forEach(item => item.addEventListener('click', function () {
     let nilai = item.parentElement.querySelector('.how-much');
     let inputNilai = nilai.value;
@@ -38,10 +36,4 @@ function jumlah() {
         console.log(jml)
     }
     document.querySelector('.totalsemua').innerText = '$' + Math.round(jml*100)/100
-
-   
-
-        // let inputT = total.value;
-    // let newInputT = parseInt(inputT) +10;
-    // total.value = newInputT;
 }
