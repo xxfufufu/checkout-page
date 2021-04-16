@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/3054cef946.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon">
+  <title>Checkout Page</title>
+</head>
+<body>
+  <div class="checkout-container">
+    <header>Checkout</header>
+    <section class="item-wrapper">
+      <div class="items">
+        <div class="item">
+          <div class="item-img">
+            <img src="./assets/photo1.png" alt="Bag">
+          </div>
+          <div class="item-desc">
+            <div class="name-price">
+              <span class="item-name">Vintage Blackbag</span>
+              <div class="price-item">
+                <span class="price-discount">$54.99</span>
+                <span class="price-nodiscount">$94.99</span>
+              </div>
+            </div>
+            <div class="counter">
+              <span class="decrement">-</span>
+              <input class="how-much" type="text" value="0">
+              <span class="increment">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="./assets/photo2.png" alt="Shoes">
+          </div>
+          <div class="item-desc">
+            <div class="name-price">
+              <span class="item-name">Levi Shoes</span>
+              <div class="price-item">
+                <span class="price-discount">$74.99</span>
+                <span class="price-nodiscount">$124.99</span>
+              </div>
+            </div>
+            <div class="counter">
+              <span class="decrement">-</span>
+              <input class="how-much" type="text" value="0">
+              <span class="increment">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="shipping">
+        <span class="shipping-name">Shipping</span>
+        <span class="price-shipping">$19</span>
+      </div>
+      <hr>
+      <div class="total">
+        <span class="total-name">Total</span>
+        <div class="totalsemua">$19</div>
+      </div>
+    </section>
+    <div class="area">
+    <section class="contact-wrapper">
+      <div class="title">Contact Information</div>
+      <form action="">
+        <div class="form-template">
+          <label for="email">E-mail</label>
+          <div class="input-container">
+            <i class="fas fa-envelope icon"></i>
+            <input class="input-field" type="text" required id="email" placeholder="Enter your email...">
+          </div>
+        </div>
+        <div class="form-template">
+          <label for="phone">Phone</label>
+          <div class="input-container">
+            <i class="fas fa-phone-alt"></i>
+            <input class="input-field" type="text" required id="phone" placeholder="Enter your phone...">
+          </div>
+        </div>
+      </form>  
+    </section>
+    <section class="shipping-address-wrapper">
+      <div class="title">Shipping Address</div>
+      <form action="">
+        <div class="form-template">
+          <label for="name">Full name</label>
+          <div class="input-container">
+            <i class="fas fa-user-circle"></i>
+            <input class="input-field" type="text" required id="name" value="Rodney Cotton">
+          </div>
+        </div>
+        <div class="form-template">
+          <label for="address">Address</label>
+          <div class="input-container">
+            <i class="fas fa-home"></i>
+            <input class="input-field" type="text" required id="address" placeholder="Your address...">
+          </div>
+        </div>
+        <div class="form-template">
+          <label for="city">City</label>
+          <div class="input-container">
+            <i class="fas fa-city"></i>
+            <input class="input-field" type="text" required id="city" placeholder="Your city...">
+          </div>
+        </div>
+        <div class="grouping">
+          <div class="form-template">
+            <label for="coutry">Address</label>
+            <div class="input-container">
+              <i class="fas fa-city"></i>
+              <input class="input-field" type="text" required id="country" placeholder="Your country...">
+              <i class="fas fa-caret-square-down"></i>
+            </div>
+          </div>
+          <div class="form-template">
+            <label for="potscal-code">Address</label>
+            <div class="input-container">
+              <i class="fas fa-address-card"></i>
+              <input class="input-field" type="text" required id="potscal-code" placeholder="Your postcal code...">
+            </div>
+          </div>
+        </div>
+        <div class="form-template check">
+          <input type="checkbox" required id="check">
+          <label for="check">Save this information for next time</label>
+        </div>
+        <div class="btn">
+          <input type="button" value="Continue">
+        </div>
+      </form>  
+    </section>
+  </div>
+    <footer>created by <b>xxfufufu</b> - devchallenges.io</footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

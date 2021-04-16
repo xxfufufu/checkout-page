@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.checkout-container {
+    max-width: 375px;
+    padding: 30px 10px;
+    margin: 0 auto;
+    border: #4E5150 1px solid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+}
+
+header {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4E5150;
+}
+
+.item-wrapper {
+    background: #F2F2F2;
+    border-radius: 12px;
+    padding: 20px;
+
+}
+.items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    margin-bottom: 80px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.counter {
+    border: 1px solid #828282;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    max-width: 90%;
+}
+.how-much {
+    text-align: center;
+    border: none;
+    outline: none;
+    max-width: 50px;
+    background-color:#F2F2F2;
+} 
+.increment, .decrement {
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #828282;;
+}
+.increment:hover, .decrement:hover {
+    background-color: #d8d5d5;
+}
+
+.name-price {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4E5150;
+}
+
+.price-discount {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2994A;
+}
+
+.price-nodiscount {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: line-through;
+    color: #4E5150;
+}
+
+.item-name {
+    margin-bottom: 10px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+hr {
+border: none;
+height: 0.01em;
+background: #bdbdbd;
+margin: 20px 0;
+}
+
+.shipping, .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-container {
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+.input-field {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.contact-wrapper {
+    margin-bottom: 30px;
+}
+.title {
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+    color: #4E5150;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+}
+
+header {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4E5150;
+}
+
+label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4F4F4F;
+}
+
+i {
+    color: #828282;
+}
+
+.grouping {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+}
+
+.grouping .form-template input {
+    width: 80%;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+
+.check label {
+    margin-left: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn input {
+    background: #F2994A;
+    border-radius: 12px;
+    padding: 15px 40px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4F4F4F;
+    margin-top: 20px;
+}
+
+@media (min-width: 775px) {
+    .checkout-container {
+        max-width: 1100px;
+        grid-template-columns: 1fr 0.7fr;
+        grid-template-rows: auto;
+        grid-column-gap: 50px;
+        grid-template-areas: 
+        "header header"
+        "area item"
+        "area item"
+        "footer footer";
+        padding: 20px 50px;
+    }
+    header {
+        grid-area: header;
+    }
+    .item-wrapper {
+        grid-area: item;
+        height: fit-content;
+    }
+    .contact-wrapper {
+        grid-area: area;
+    }
+    .shipping-address-wrapper {
+        grid-area: area;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
